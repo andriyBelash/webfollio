@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html',{
+	"title":"Web Folio"
+	})
+	<body>
+		@@include('html/header.html',{})
+		<main class="page">
+			<section class="page__main-block main-block">
+				<div class="main-block__container _container">
+					<div class="main-block__content">
+						<div class="main-block__block">
+							<h2 class="main-block__title">I design digital products that make an impact.</h2>
+							<p class="main-block__text">Hi! I’m Alex, a product designer based in Oakland. I create user-friendly interfaces for fast-growing startups.</p>
+							<a href="" class="main-block__button">Hire me! <img src="@img/svg/mail.svg" alt="" srcset=""></a>
+							<div class="main-block__independent">
+								<img class="main-block__cup" src="@img/svg/cup.svg" alt="" srcset="">
+								<div class="main-block__items">
+									<div class="main-block__item-text">Independent Of The Year</div>
+									<div class="main-block__item-subtext">Annual Awards 2020 • awwwards.com</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-block__image">
+							<img src="@img/png/main-block.png" alt="" srcset="">
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/footer.html',{})
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

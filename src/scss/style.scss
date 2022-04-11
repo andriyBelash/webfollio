@@ -1,0 +1,54 @@
+
+
+
+//&display=swap&subset=cyrilic-ext
+@import url(https://fonts.googleapis.com/css?family=Space+Grotesk:regular&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Epilogue:regular&display=swap);
+//ПЕРЕМЕННЫЕ
+$fontFamily: "Epilogue";
+$minWidth: 320px;
+$maxWidth: 1152px;
+$maxWidthContainer: 1310px;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+
+.wrapper{
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	&._loaded {
+		
+	}
+}
+
+._container{
+	max-width: $maxWidthContainer;
+	margin: 0 auto;
+	padding: 0 15px;
+	@media (max-width:991.98px){
+		max-width: 970px;
+	}
+	// @media (max-width: 991.98px){
+	// 	max-width: 750px;
+	// }
+	@media (max-width: 479.98px){
+		max-width: none;
+		padding: 0 10px;
+	}
+}
+
+.page{
+	flex: 1 1 auto;
+}
+
+@import "fonts";
+@import "null";
+@import "ui";
+@import "header";
+@import "main";
+@import "footer";
+
