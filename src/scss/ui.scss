@@ -48,3 +48,23 @@
 		object-fit: cover;
 	}
 }
+//==========================================================================================================================================
+.wave {
+	
+    // .wave__image
+    &__image {
+		display: inline-flex;
+		align-items: center;
+		gap: 20px;
+    }
+
+    // .wave__title
+
+    &__title {
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: #4543E8;
+    }
+}
