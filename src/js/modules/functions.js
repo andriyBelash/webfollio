@@ -88,7 +88,7 @@ export function isSwiper() {
 			sliderScroll.scrollbar.updateSize();
 		}
 		}
-		let slider_about = new Swiper('.main-block__slider', {
+		let slider_about = new Swiper('.slider-block__swiper', {
 		/*
 		effect: 'fade',
 		autoplay: {
@@ -98,7 +98,7 @@ export function isSwiper() {
 		*/
 		observer: true,
 		observeParents: true,
-		slidesPerView: 1,
+		slidesPerView: 2,
 		spaceBetween: 30,
 		//autoHeight: true,
 		speed: 800,
@@ -108,49 +108,42 @@ export function isSwiper() {
 		//preloadImages: false,
 		//lazy: true,
 		// Dotts
-		autoplay: {
-			delay: 3000,
-			disableOnInteraction: false,
-		},
-		pagination: {
-			el: '.control-main-block__dotts',
-			clickable: true,
-		},
-		// Arrows
-		// navigation: {
-		// 	nextEl: '.control-main-slider__arrow_next',
-		// 	prevEl: '.control-main-slider__arrow_prev',
+		// autoplay: {
+		// 	delay: 3000,
+		// 	disableOnInteraction: false,
 		// },
-		/*
+		// pagination: {
+		// 	el: '.control-main-block__dotts',
+		// 	clickable: true,
+		// },
+		// Arrows
+		navigation: {
+			nextEl: '.slider-block__next',
+			prevEl: '.slider-block__prev',
+		},
+		
 		breakpoints: {
 			320: {
 				slidesPerView: 1,
-				spaceBetween: 0,
+				spaceBetween: 10,
 				autoHeight: true,
 			},
 			768: {
-				slidesPerView: 2,
+				slidesPerView: 1,
 				spaceBetween: 20,
 			},
 			992: {
-				slidesPerView: 3,
+				slidesPerView: 1,
 				spaceBetween: 20,
 			},
 			1268: {
-				slidesPerView: 4,
+				slidesPerView: 2,
 				spaceBetween: 30,
 			},
 		},
-		*/
+		
 		on: {
-			init: function (swiper) {
-				const allSliders = document.querySelector('.fraction-controll__all')
-				allSliders.innerHTML = swiper.slides.length - 2 < 10 ? `0${swiper.slides.length - 2}` : swiper.slides.length - 2
-			},
-			slideChange: function (swiper) {
-				const currentSliders = document.querySelector('.fraction-controll__current');
-				currentSliders.innerHTML = swiper.realIndex + 1 < 10 ? `0${swiper.realIndex + 1}` : swiper.realIndex + 1
-			}
+			
 		}
 		// And if we need scrollbar
 		//scrollbar: {
