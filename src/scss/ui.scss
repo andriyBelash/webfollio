@@ -107,7 +107,7 @@
 
 //==========================================================================================================================================
 .waves {
-	display: flex;
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
@@ -123,4 +123,17 @@
 		text-transform: uppercase;
 		color: #4543E8;
     }
+}
+
+.link {
+	color: #4543E8;
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding-bottom: 12px;
+	border-bottom: 2px solid rgba(69, 67, 232, 0.2);
+	position: relative;
+    top: 0;
+    left: 50%;
+	transform: translate(-50%, 0);
 }
