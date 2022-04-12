@@ -169,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   top: 0;
   left: 0;
-  object-fit: cover;
+  object-fit: unset;
 }
 
 .wave__image {
@@ -183,6 +183,16 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #4543E8;
+}
+
+.title {
+  font-size: 60px;
+  line-height: 110%;
+}
+@media (max-width: 767.98px) {
+  .title {
+    font-size: 30px;
+  }
 }
 
 .header {
@@ -532,5 +542,109 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+.results {
+  padding: 180px 0px 120px 0px;
+}
+@media (max-width: 767px) {
+  .results {
+    padding: 60px 0px 60px 0px;
+  }
+}
+.results__title {
+  max-width: 698px;
+  margin: 26px 0px 78px 0px;
+}
+@media (max-width: 767px) {
+  .results__title {
+    margin: 20px 0px 35px 0px;
+  }
+}
+.block-result__items-one {
+  display: flex;
+  justify-content: space-between;
+  gap: 9.8%;
+  margin-bottom: 60px;
+}
+@media (max-width: 991px) {
+  .block-result__items-one {
+    display: block;
+    max-width: 740px;
+    margin: 0 auto;
+  }
+}
+.block-result__item-one {
+  flex: 0 0 44%;
+}
+@media (max-width: 991px) {
+  .block-result__item-one {
+    margin-bottom: 40px;
+  }
+}
+.block-result__image {
+  padding-bottom: 89%;
+  margin-bottom: 32px;
+}
+.block-result__image img {
+  width: 100%;
+  border-radius: 10px;
+}
+.block-result__block {
+  color: #000000;
+}
+.block-result__title {
+  font-size: 24px;
+  line-height: 142%;
+  margin-bottom: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (any-hover: hover) {
+  .block-result__title:hover {
+    text-decoration: underline;
+  }
+}
+.block-result__text {
+  font-size: 12px;
+  line-height: 232%;
+}
+@media (any-hover: hover) {
+  .block-result__text:hover {
+    text-decoration: underline;
+  }
+}
+.block-result__item-two {
+  flex: 0 0 44%;
+}
+@media (max-width: 991px) {
+  .block-result__item-two {
+    margin-bottom: 40px;
+  }
+}
+.block-result__items-two {
+  max-width: 740px;
+  margin: 0 auto 40px auto;
+}
+.block-result__btn {
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #4543E8;
+  padding: 20px 44px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+@media (any-hover: hover) {
+  .block-result__btn:hover {
+    background: #2824e7;
+    box-shadow: 0px 0px 5px #4543E8;
   }
 }
