@@ -56,6 +56,10 @@
 		display: inline-flex;
 		align-items: center;
 		gap: 20px;
+		@media (max-width: 767.98px) {
+			display: flex;
+			justify-content: center;
+		}
     }
 
     // .wave__title
@@ -107,7 +111,7 @@
 
 //==========================================================================================================================================
 .waves {
-	display: inline-flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
@@ -132,6 +136,8 @@
 	gap: 10px;
 	padding-bottom: 12px;
 	border-bottom: 2px solid rgba(69, 67, 232, 0.2);
+}
+.position{
 	position: relative;
     top: 0;
     left: 50%;
