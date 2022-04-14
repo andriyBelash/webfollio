@@ -133,7 +133,7 @@ export function isSwiper() {
 				spaceBetween: 20,
 			},
 			992: {
-				slidesPerView: 1,
+				slidesPerView: 2,
 				spaceBetween: 20,
 			},
 			1268: {
